@@ -1,5 +1,9 @@
+import KnowledgeForm from '../components/KnowledgeForm';
 export default function Home() {
   return (
+ <div>
+  <KnowledgeForm />
+</div>   
     <div style={{ fontFamily: 'Arial, sans-serif', padding: '40px' }}>
       <h1 style={{ color: '#0070f3' }}>👑 Dominion Overflow System</h1>
       <p>Welcome to your live AI-powered empire hub.</p>
