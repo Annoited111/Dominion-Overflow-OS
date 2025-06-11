@@ -27,7 +27,7 @@ export default function RealEstatePage() {
           style={{ padding: '10px', width: '300px', marginBottom: '10px' }}
         />
         <br />
-        <textarea
+        <textarea 
           placeholder="Enter property details (neighborhood, price, ARV, seller info, etc.)"
           value={content}
           onChange={(e) => setContent(e.target.value)}
