@@ -1,33 +1,18 @@
-import { useEffect, useState } from 'react';
-import { fetchRealEstate } from '../lib/fetchRealEstate';
+import React from 'react';
 
 export default function RealEstateDashboard() {
-  const [deals, setDeals] = useState([]);
-
-  useEffect(() => {
-    async function loadDeals() {
-      const data = await fetchRealEstate();
-      setDeals(data);
-    }
-
-    loadDeals();
-  }, []);
-
   return (
-    <div style={{ padding: '40px', fontFamily: 'Arial, sans-serif' }}>
-      <h1 style={{ color: '#0070f3' }}>📊 Saved Real Estate Deals</h1>
-      {deals.length === 0 ? (
-        <p>No deals found yet. Submit one from the AI Brain page.</p>
-      ) : (
-        <ul>
-          {deals.map((deal, i) => (
-            <li key={i} style={{ marginBottom: '20px' }}>
-              <strong>Title:</strong> {deal.title}<br />
-              <strong>Notes:</strong> {deal.content}
-            </li>
-          ))}
-        </ul>
-      )} 
+    <div style={{ fontFamily: 'Arial', padding: '40px' }}>
+      <h1 style={{ color: '#0070f3' }}>🏡 Saved Real Estate Deals</h1>
+      <p>This is where all your saved or analyzed real estate opportunities will show up.</p>
+
+      <ul>
+        <li>🏠 123 Liberty Lane, Newark, NJ – ARV: $480,000</li>
+        <li>🏘️ 456 Grace Avenue, Trenton, NJ – Off-Market Potential</li>
+        <li>🏚️ 789 Overflow Rd, Camden, NJ – Distressed & Pre-Foreclosure</li>
+      </ul>
+
+      <p style={{ marginTop: '30px' }}>More features like filters, map view, and automated deal scoring coming soon.</p>
     </div>
   );
 }
