@@ -27,7 +27,7 @@ export default function RealEstateDashboard() {
             </li>
           ))}
         </ul>
-      )}
+      )} 
     </div>
   );
 }
