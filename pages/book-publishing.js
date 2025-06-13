@@ -1,8 +1,8 @@
 export default function BookPublishing() {
   return (
-    <div style={{ fontFamily: 'Arial, sans-serif', padding: '40px' }}>
-      <h1 style={{ color: '#0070f3' }}>📚 Book Publishing</h1>
-      <p>Launch, write, and manage your high-impact books and digital scrolls. This is your publishing headquarters powered by Dominion AI.</p>
+    <div style={{ padding: '40px' }}>
+      <h1>📚 Book Publishing Tab</h1>
+      <p>All digital products, drafts, and AI-generated ebooks will live here.</p>
     </div>
   );
 }
