@@ -1,20 +1,10 @@
-import KnowledgeForm from '../components/KnowledgeForm';
-export default function Home() {
-  return (
- <div>
-  <KnowledgeForm />
-</div>   
-    <div style={{ fontFamily: 'Arial, sans-serif', padding: '40px' }}>
-      <h1 style={{ color: '#0070f3' }}>👑 Dominion Overflow System</h1>
-      <p>Welcome to your live AI-powered empire hub.</p>
-      <ul>
-        <li><a href="/real-estate">Real Estate AI Brain</a></li>
-        <li><a href="/real-estate-dashboard">View Saved Deals</a></li>
-        <li><a href="/vehicle-management">Vehicle Management</a></li>
-        <li><a href="/book-publishing">Book Publishing</a></li>
-        <li><a href="/designer">Designer Tab</a></li>
-        <li><a href="/vault">System Vault</a></li>
-      </ul>
-    </div>
-  );
-}
+<nav style={{ marginTop: '30px' }}>
+  <ul style={{ listStyle: 'none', padding: 0 }}>
+    <li><a href="/real-estate" style={{ fontWeight: 'bold', color: '#333' }}>🏠 Real Estate AI Brain</a></li>
+    <li><a href="/real-estate-dashboard" style={{ fontWeight: 'bold', color: '#333' }}>💾 View Saved Deals</a></li>
+    <li><a href="/vehicle-management" style={{ fontWeight: 'bold', color: '#333' }}>🚗 Vehicle Management</a></li>
+    <li><a href="/book-publishing" style={{ fontWeight: 'bold', color: '#333' }}>📚 Book Publishing</a></li>
+    <li><a href="/designer" style={{ fontWeight: 'bold', color: '#333' }}>🎨 Designer Tab</a></li>
+    <li><a href="/vault" style={{ fontWeight: 'bold', color: '#333' }}>🔐 System Vault</a></li>
+  </ul>
+</nav>
